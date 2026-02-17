@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36705.20 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GuodaLight", "GuodaLight.csproj", "{2593AB82-B8E8-40E8-98C0-579D67550192}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2593AB82-B8E8-40E8-98C0-579D67550192}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2593AB82-B8E8-40E8-98C0-579D67550192}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2593AB82-B8E8-40E8-98C0-579D67550192}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2593AB82-B8E8-40E8-98C0-579D67550192}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FDB2976C-6F21-496C-A7DC-580796030651}
+	EndGlobalSection
+EndGlobal
