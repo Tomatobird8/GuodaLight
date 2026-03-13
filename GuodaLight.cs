@@ -15,11 +15,14 @@ namespace GuodaLight
         internal new static ManualLogSource Logger { get; private set; } = null!;
         internal static Harmony? Harmony { get; set; }
 
-        internal static LightKey InputActionInstance = new LightKey();
+        internal static LightKey InputActionInstance = new();
 
         public static float lightIntensity = 486.8536f;
         public static float lightRange = 55f;
         public static float lightColorTemperature = 8371f;
+        public static bool lightOnByDefault = true;
+        public static bool silentLight = false;
+        public static float clickVolume = 0.5f;
 
         private void Awake()
         {
@@ -29,6 +32,9 @@ namespace GuodaLight
             lightIntensity = Config.Bind<float>("General", "LightIntensity", 486.8536f, "Intensity of the light").Value;
             lightRange = Config.Bind<float>("General", "LightRange", 55f, "Light reach distance").Value;
             lightColorTemperature = Config.Bind<float>("General", "lightColorTemperature", 8371f, "Color temperature of the light").Value;
+            lightOnByDefault = Config.Bind<bool>("General", "lightOnByDefault", true, "Should the light default to being on when player joins?").Value;
+            silentLight = Config.Bind<bool>("General", "SilentLight", false, "Should toggling the light be silent?").Value;
+            clickVolume = Config.Bind<float>("General", "ClickVolume", 0.5f, "Audio volume of the flashlight toggle click.").Value;
 
             Patch();
 
