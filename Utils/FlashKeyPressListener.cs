@@ -82,7 +82,7 @@ namespace GuodaLight.Utils
 
         public void OnActionPerformed(InputAction.CallbackContext context)
         {
-            if (light == null || !Application.isFocused)
+            if (light == null || !Application.isFocused || GameNetworkManager.Instance?.localPlayerController == null || GameNetworkManager.Instance.localPlayerController.isPlayerDead || GameNetworkManager.Instance.localPlayerController.isTypingChat || GameNetworkManager.Instance.localPlayerController.inTerminalMenu || GameNetworkManager.Instance.localPlayerController.quickMenuManager.isMenuOpen)
             {
                 return;
             }
